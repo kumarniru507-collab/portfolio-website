@@ -1,0 +1,125 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+.hero {
+    height: 40vh;
+    background: #0f172a;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.about {
+    padding: 60px 20px;
+    text-align: center;
+    background: #a7aeb4;
+
+}
+.about h2 {
+font-size:32px;
+margin-bottom: 15px;
+
+}
+.about p {
+    max-width: 300px;
+    margin: auto;
+    font-size: 18px;
+    color: #344155;
+}
+   
+.skills {
+    padding: 60px 20px;
+    text-align: center;
+}
+.skills h2 {
+    font-size:32px;
+    margin-bottom: 20px;
+}
+.skill-list{
+    display: flex;
+    justify-content: center;
+    gap:15px;
+    flex-wrap: wrap; 
+}
+.skill-list span {
+    background: #0f172a;
+    color: white;
+    padding: 10px 18px;
+    border-radius: 20px;
+    font-size: 14px;
+}
+.skill-list span:hover{
+    background-color: red;
+    color: yellow;
+
+}
+.projects {
+    padding: 60px 20px;
+    background: #f1f5f9;
+    text-align: center;
+}
+.project-container {
+    display: grid;
+    grid-template-columns:repeat(auto-fit, minmax(280px, 1fr));
+    gap:20px;
+
+}
+.project-card {
+    display: inline-block;
+    background:linear-gradient(135deg,#6a11cb,#2575fc);
+    color: #fff;
+    font-size: 14px;
+    text-decoration: none;
+    padding: 12px 22px;
+    max-width: 300px;
+    margin: 15px auto;
+    border-radius: 30px;
+    box-shadow: 0 8px 20px(0,0,0,0.15);
+    box-shadow: 0.3s;
+    transition: all 0.3s ease;
+    opacity: 0;
+    transform: translate(40px);
+}
+.project-card:hover {
+    background:linear-gradient(135deg,#2575fc,#6a22cb);
+    color:white;
+    transform: translateY(-5px);
+    transition: 5s;
+    box-shadow: 0 12px 25px rgba(0, 0, 0, 0.2);
+}
+
+@media (max-width: 600px){
+    .hero h1{
+        font-size: 28px;
+    }
+    .project-card {
+        margin: 10px;
+    }
+}
+.btn{
+    background: #2563eb;
+    color: white;
+    padding: 8px 16px;
+    border-radius: 20px;
+    text-decoration: none;
+}
+.btn:hover{
+    background: #6297ec;
+    transform: scale(1.05);
+    transition: 0.3s;
+}
+.footer{
+    text-align: center;
+    padding: 20px;
+    background: #0f172a;
+    color: white;
+}
+.footer p{
+    font-size: 14px;
+    opacity: 0.8;
+}
