@@ -135,4 +135,38 @@ margin-bottom: 15px;
     text-decoration:none;
     font-weight: bold;
 }
+#contact{
+  padding: 60px 20px;
+  background: #f4f6fb;
+  text-align: center;
+}
+
+#contact h2{
+  font-size: 32px;
+  margin-bottom: 10px;
+}
+
+#contact p{
+  font-size: 16px;
+  color: #555;
+  margin-bottom: 25px;
+}
+
+.contact-btn{
+  display: inline-block;
+  background: #25D366;
+  color: white;
+  padding: 14px 28px;
+  border-radius: 30px;
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.contact-btn:hover{
+  background: #1ebe5d;
+  transform: scale(1.05);
+}
     
+
